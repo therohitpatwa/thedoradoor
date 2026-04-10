@@ -102,7 +102,10 @@ export default function Home() {
               {/* Hero Branding */}
               <div className="hero-brand" id="hero-brand">
                 <h1 className="hero-title">TheDoraDoor</h1>
-                <p className="hero-tagline">Wanna Share File ! Knock Knock on thedoradoor</p>
+                <p className="hero-tagline">
+                  <span className="tagline-part1">Wanna Share File !</span>
+                  <span className="tagline-part2">Knock Knock on thedoradoor</span>
+                </p>
               </div>
 
               {/* Send / Receive Tabs */}
