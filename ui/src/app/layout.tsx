@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Transfer files securely peer-to-peer with thedoradoor. Fast, encrypted, no middleman.',
   keywords: ['file transfer', 'p2p', 'secure', 'encrypted', 'thedoradoor'],
   icons: {
-    icon: '/logo.png',
+    icon: '/favicon.png',
   },
 }
 

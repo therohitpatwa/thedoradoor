@@ -16,7 +16,12 @@ export default function SponsorBottom() {
             decoding="async"
           />
         ) : (
-          <span className="sponsor-placeholder">Promote Your Brand Here</span>
+          <div className="sponsor-cta-wrapper">
+            <span className="sponsor-placeholder">Promote Your Brand Here</span>
+            <div className="sponsor-contact">
+              Contact: <a href="mailto:therohitpatwa@gmail.com">therohitpatwa@gmail.com</a>
+            </div>
+          </div>
         )}
       </div>
     </div>

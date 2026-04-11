@@ -118,15 +118,38 @@ body {
 }
 
 @keyframes fillTextSeq1 {
-  0%, 10% { background-position: 100% 0; }
-  35%, 65% { background-position: 50% 0; }
-  90%, 100% { background-position: 0% 0; }
+
+  0%,
+  10% {
+    background-position: 100% 0;
+  }
+
+  35%,
+  65% {
+    background-position: 50% 0;
+  }
+
+  90%,
+  100% {
+    background-position: 0% 0;
+  }
 }
 
 @keyframes fillTextSeq2 {
-  0%, 25% { background-position: 100% 0; }
-  50%, 80% { background-position: 50% 0; }
-  100% { background-position: 0% 0; }
+
+  0%,
+  25% {
+    background-position: 100% 0;
+  }
+
+  50%,
+  80% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: 0% 0;
+  }
 }
 
 .animate-fade-in-up {
@@ -136,18 +159,22 @@ body {
 /* ═══ Header ═══ */
 .header {
   position: sticky;
-  top: 0;
-  z-index: 100;
-  background: var(--bg-white);
+  top: 10px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.98);
+  /* Increased Opacity */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border: 1.5px solid var(--border-light);
-  box-shadow: 0 2px 12px rgba(100, 110, 140, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border-radius: 50px;
   padding: 0.75rem 1.75rem;
-  margin: 0.8rem 1.75rem 0;
+  margin: 10px 1.75rem;
   min-height: 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.3s ease;
 }
 
 .header-logo {
@@ -274,10 +301,52 @@ body {
   font-size: 5rem;
   font-weight: 900;
   color: #1a1a1a;
-  line-height: 1.05;
+  line-height: 1.2;
+  /* Increased for breathing room */
   text-align: right;
   text-shadow: none;
   letter-spacing: -2px;
+  padding-bottom: 0.5rem;
+  /* Room for descenders */
+  /* Remove overflow: hidden to prevent cutting */
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-120px);
+    filter: blur(4px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(8px);
+    filter: blur(0);
+  }
+
+  70% {
+    transform: translateY(-4px);
+  }
+
+  85% {
+    transform: translateY(2px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.drop-word {
+  display: inline-block;
+  opacity: 0;
+  animation: dropIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.drop-word-brand {
+  color: var(--blue-600);
 }
 
 
@@ -300,12 +369,38 @@ body {
   box-shadow: 0 4px 16px rgba(59, 130, 246, 0.1);
 }
 
+.sponsor-card .sponsor-cta-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+
 .sponsor-card .sponsor-placeholder {
-  font-size: 0.75rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+
+  letter-spacing: 1px;
+  display: block;
+}
+
+.sponsor-contact {
+  font-size: 0.85rem;
   color: var(--text-light);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.sponsor-contact a {
+  color: var(--blue-600);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+.sponsor-contact a:hover {
+  color: var(--blue-700);
 }
 
 .sponsor-card .sponsor-img {
@@ -370,7 +465,8 @@ body {
   gap: 0.35rem;
 }
 
-.tagline-part1, .tagline-part2 {
+.tagline-part1,
+.tagline-part2 {
   background: linear-gradient(to right, var(--text-light) 33.3%, var(--blue-700) 33.3%, var(--blue-700) 66.6%, var(--text-light) 66.6%);
   background-size: 300% 100%;
   background-position: 100% 0;
@@ -607,7 +703,8 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--blue-600);
-  flex-shrink: 0; /* Prevents icon from shrinking */
+  flex-shrink: 0;
+  /* Prevents icon from shrinking */
 }
 
 .file-info-text {
@@ -720,7 +817,108 @@ body {
   margin-top: 0.4rem;
 }
 
-/* ═══ About & FAQ Pages ═══ */
+/* ═══ About Page — Founder Story ═══ */
+.about-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.about-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.about-photo-ring {
+  display: inline-flex;
+  border-radius: var(--radius-lg);
+  padding: 4px;
+  background: linear-gradient(135deg, var(--blue-400), var(--blue-600));
+  box-shadow: 0 12px 40px rgba(37, 99, 235, 0.15);
+  margin-bottom: 1.25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-photo {
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: calc(var(--radius-lg) - 2px);
+  object-fit: cover;
+  object-position: center top;
+  /* Keeps faces visible if it's a portrait photo */
+  border: 3px solid var(--bg-white);
+  background-color: var(--bg-white);
+  /* Prevents transparent gaps if object-fit is changed */
+}
+
+.about-founder-name {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.15rem;
+}
+
+.about-founder-role {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--blue-500);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.about-story {
+  padding: 1.5rem 0;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.about-story-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-story p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.about-story p strong {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.about-story p em {
+  color: var(--blue-600);
+  font-style: italic;
+}
+
+.about-story-closing {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--blue-50);
+  border-left: 3px solid var(--blue-500);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  line-height: 2 !important;
+}
+
+.about-story-closing strong {
+  color: var(--blue-700) !important;
+  font-size: 1.05rem;
+}
+
+/* ═══ FAQ Page ═══ */
 .page-container {
   max-width: 860px;
   margin: 0 auto;
@@ -739,33 +937,6 @@ body {
   color: var(--text-light);
   font-size: 1rem;
   margin-bottom: 2rem;
-}
-
-.about-card {
-  background: var(--bg-white);
-  border: 1.5px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  padding: 1.75rem;
-  margin-bottom: 1rem;
-  transition: all 0.25s ease;
-}
-
-.about-card:hover {
-  border-color: var(--blue-400);
-  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.08);
-}
-
-.about-card h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-bottom: 0.6rem;
-}
-
-.about-card p {
-  color: var(--text-mid);
-  line-height: 1.65;
-  font-size: 0.92rem;
 }
 
 .faq-item {
