@@ -10,6 +10,7 @@ export default function AboutPage() {
             src="/my.jpeg"
             alt="Rohit — Founder of thedoradoor"
             className="about-photo"
+            loading="lazy"
           />
         </div>
         <h2 className="about-founder-name">Rohit</h2>
@@ -42,7 +43,7 @@ export default function AboutPage() {
           <div className="problem-item">
             <h4 className="problem-title"><span>03</span> The Large File Struggle</h4>
             <p className="problem-text">
-              Sharing large files is still a massive headache. If it’s not too big for email, it’s making you wait forever or sign up for some random cloud service. No cap, it shouldn't be this hard.
+              Sharing large files is still a massive headache. It’s making you wait forever or sign up for some random cloud service. No cap, it shouldn't be this hard.
             </p>
           </div>
         </div>
@@ -52,7 +53,7 @@ export default function AboutPage() {
             These were the problems I saw, so I built <strong>thedoradoor</strong>. The name is literally inspired by Doraemon’s Anywhere Door.
           </p>
           <p>
-            Just like Doraemon could take you from anywhere to anywhere with his door, I wanted to let you share files <strong>from anywhere, to anywhere</strong> without any login or signup. It’s all peer-to-peer, right in your browser. No middleman, just the anywhere door for your files.
+            Just like Doraemon could take you from anywhere to anywhere with his door, TheDoraDoor let you share files <strong>from anywhere, to anywhere</strong> without any login or signup. It’s all peer-to-peer, right in your browser. No middleman, just the anywhere door for your files.
           </p>
         </div>
       </div>

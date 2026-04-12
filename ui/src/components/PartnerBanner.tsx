@@ -1,24 +1,24 @@
 'use client';
 
-export default function SponsorBottom() {
+export default function PartnerBanner() {
 
   const imageSrc = '';
   return (
-    <div className="sponsor-bottom" id="sponsor-bottom">
-      <div className="sponsor-card">
+    <div className="partner-banner" id="partner-banner">
+      <div className="partner-card">
         {imageSrc ? (
           /* eslint-disable-next-line @next/next/no-img-element */
           <img
             src={imageSrc}
-            alt="bottom sponsor"
-            className="sponsor-img"
+            alt="partner"
+            className="partner-img"
             loading="lazy"
             decoding="async"
           />
         ) : (
-          <div className="sponsor-cta-wrapper">
-            <span className="sponsor-placeholder">Promote Your Brand Here</span>
-            <div className="sponsor-contact">
+          <div className="partner-cta-wrapper">
+            <span className="partner-placeholder">Promote Your Brand Here</span>
+            <div className="partner-contact">
               Contact: <a href="mailto:therohitpatwa@gmail.com">therohitpatwa@gmail.com</a>
             </div>
           </div>

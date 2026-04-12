@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import Header from '@/components/Header';
-import SponsorBottom from '@/components/SponsorBottom';
+import PartnerBanner from '@/components/PartnerBanner';
 import FileUpload from '@/components/FileUpload';
 import FileDownload from '@/components/FileDownload';
 import InviteCode from '@/components/InviteCode';
@@ -103,7 +103,7 @@ export default function Home() {
               <div className="hero-brand" id="hero-brand">
                 <h1 className="hero-title">TheDoraDoor</h1>
                 <p className="hero-tagline">
-                  <span className="tagline-part1">Wanna Share File !</span>
+                  <span className="tagline-part1">Wanna Share Files !</span>
                   <span className="tagline-part2">Knock Knock on thedoradoor</span>
                 </p>
               </div>
@@ -184,8 +184,8 @@ export default function Home() {
               )}
             </div>
 
-            {/* Bottom Sponsors */}
-            <SponsorBottom />
+            {/* Bottom Partners */}
+            <PartnerBanner />
           </div>
 
           {/* Right Hero Text */}
