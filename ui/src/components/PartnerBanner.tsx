@@ -2,7 +2,7 @@
 
 export default function PartnerBanner() {
 
-  const imageSrc = '';
+  const imageSrc = '/sponsors/maggee.jpg';
   return (
     <div className="partner-banner" id="partner-banner">
       <div className="partner-card">

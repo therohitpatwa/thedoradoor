@@ -6,22 +6,23 @@ const faqs = [
   {
     question: 'How does thedoradoor work?',
     answer:
-      'thedoradoor uses peer-to-peer technology to transfer files directly between two devices. When you upload a file, the app generates an invite code. Share that code with the recipient, and they can download the file directly from your machine—no cloud storage involved.',
+      'Thedoradoor uses peer-to-peer technology to transfer files directly between two devices. When you upload a file, the app generates an invite code. Share that code with the recipient, and they can download the file directly from your device. No cloud storage involved.',
   },
   {
     question: 'Is my data secure?',
     answer:
-      'Absolutely. All file transfers are encrypted end-to-end. Your files never pass through or get stored on any central server. Only the sender and receiver have access to the data during the transfer.',
+      'Absolutely. All file transfers are encrypted end-to-end. We do not store any of your files on our servers. Your files never pass through or get stored on any central server. Only the sender and receiver have access to the data during the transfer.',
+  },
+
+  {
+    question: 'Do I need to create an account?',
+    answer:
+      'No! thedoradoor is designed to be frictionless. You can start sharing files immediately—no sign-up, no login, no personal information required.',
   },
   {
     question: 'What is the maximum file size I can transfer?',
     answer:
       'There is no hard limit on file size from our side. Transfer speed and reliability depend on both parties\' internet connections. However, for very large files (10GB+), we recommend a stable connection for the best experience.',
-  },
-  {
-    question: 'Do I need to create an account?',
-    answer:
-      'No! thedoradoor is designed to be frictionless. You can start sharing files immediately—no sign-up, no login, no personal information required.',
   },
   {
     question: 'How long does the invite code stay valid?',
