@@ -6,12 +6,12 @@ const faqs = [
   {
     question: 'How does thedoradoor work?',
     answer:
-      'Thedoradoor uses peer-to-peer technology to transfer files directly between two devices. When you upload a file, the app generates an invite code. Share that code with the recipient, and they can download the file directly from your device. No cloud storage involved.',
+      'Thedoradoor uses end-to-end technology to transfer files directly between two devices. When you upload a file, the app generates an invite code. Share that code with the recipient, and they can download the file directly from your device. ',
   },
   {
     question: 'Is my data secure?',
     answer:
-      'Absolutely. All file transfers are encrypted end-to-end. We do not store any of your files on our servers. Your files never pass through or get stored on any central server. Only the sender and receiver have access to the data during the transfer.',
+      'Absolutely. All file transfers are encrypted end-to-end. We do not store any of your files on our servers.',
   },
 
   {
@@ -22,12 +22,12 @@ const faqs = [
   {
     question: 'What is the maximum file size I can transfer?',
     answer:
-      'There is no hard limit on file size from our side. Transfer speed and reliability depend on both parties\' internet connections. However, for very large files (10GB+), we recommend a stable connection for the best experience.',
+      'For now you can transfer 100-200 MB size of files smoothly and fast . We are improving our app day by day for limitless and fast sharing.',
   },
   {
     question: 'How long does the invite code stay valid?',
     answer:
-      'The invite code remains valid as long as your file sharing session is active. Once you close the session or navigate away, the code expires and the file is no longer accessible.',
+      'The invite code  valid for 30 min after generating the invite code and after one successful download you will not able to download again.',
   },
   {
     question: 'Can I share files with multiple people at once?',

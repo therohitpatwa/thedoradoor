@@ -22,7 +22,7 @@ export default function AboutPage() {
         <h3 className="about-story-title">The Story Behind Thedoradoor</h3>
 
         <p className="about-story-intro">
-          I started noticing some major Ls in how people share files:
+          I started noticing some major problems in how people share files:
         </p>
 
         <div className="problem-sections">
