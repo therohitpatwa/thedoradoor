@@ -27,7 +27,7 @@ const faqs = [
   {
     question: 'How long does the invite code stay valid?',
     answer:
-      'The invite code is valid for 30 min after generation, and after one successful download, you will not be able to download it again.',
+      'The invite code is valid for 10 min after generation, and after one successful download, you will not be able to download it again.',
   },
   {
     question: 'Can I share files with multiple people at once?',

@@ -54,7 +54,7 @@ public class FileController {
             }catch (Exception ex){
                 System.err.println("Error during cleanup "+ ex.getMessage());
             }
-        },30,30, TimeUnit.MINUTES);
+        },10,10, TimeUnit.MINUTES);
     }
 
     public void stop(){
@@ -84,7 +84,7 @@ public class FileController {
         if(files == null) return;
 
         long now = System.currentTimeMillis();
-        long cutoff = now - (30 * 60 * 1000L);
+        long cutoff = now - (10 * 60 * 1000L);
 
 
         for(File file:files){
