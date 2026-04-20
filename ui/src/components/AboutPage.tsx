@@ -31,6 +31,7 @@ export default function AboutPage() {
 
         <div className="problem-sections">
           <div className="problem-item">
+            <br />
             <h4 className="problem-title"><span>01</span> The Login Trap</h4>
             <p className="problem-text">
               I saw people at libraries and cyber cafés logging into their WhatsApp Web on public PCs just to move a file from their phone. Half the time people forget to log out and their private chats are just... out there.
