@@ -6,7 +6,7 @@ const faqs = [
   {
     question: 'How does thedoradoor work?',
     answer:
-      'Thedoradoor uses end-to-end technology to transfer files directly between two devices. When you upload a file, the app generates an invite code. Share that code with the recipient, and they can download the file directly from your device. ',
+      'Thedoradoor uses end-to-end technology to transfer files directly between two devices. When you upload a file, the app generates an invite code. Share that code with the recipient, and they can download the file directly from your device.',
   },
   {
     question: 'Is my data secure?',
@@ -22,12 +22,12 @@ const faqs = [
   {
     question: 'What is the maximum file size I can transfer?',
     answer:
-      'For now you can transfer 100-200 MB size of files smoothly and fast . We are improving our app day by day for limitless and fast sharing.',
+      'For now you can transfer 100-200 MB size of files smoothly and fast. We are improving our app day by day for limitless and fast sharing.',
   },
   {
     question: 'How long does the invite code stay valid?',
     answer:
-      'The invite code  valid for 30 min after generating the invite code and after one successful download you will not able to download again.',
+      'The invite code is valid for 30 min after generation, and after one successful download, you will not be able to download it again.',
   },
   {
     question: 'Can I share files with multiple people at once?',

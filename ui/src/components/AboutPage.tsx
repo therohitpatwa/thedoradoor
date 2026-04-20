@@ -1,32 +1,37 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function AboutPage() {
   return (
     <div className="about-page" id="about-page">
       {/* Founder Photo */}
       <div className="about-photo-wrapper">
         <div className="about-photo-ring">
-          <img
+          <Image
             src="/my.jpeg"
             alt="Rohit — Founder of thedoradoor"
+            width={180}
+            height={180}
             className="about-photo"
-            loading="lazy"
+            priority
           />
         </div>
         <h2 className="about-founder-name">Rohit</h2>
-        <p className="about-founder-role">Founder &amp; Developer</p>
+        <p className="about-founder-role">Founder & Developer</p>
       </div>
 
       {/* Story */}
       <div className="about-story">
-        <h3 className="about-story-title">The Story Behind Thedoradoor</h3>
+        <h2 className="about-story-title">The Story Behind Thedoradoor</h2>
 
-        <p className="about-story-intro">
+        <h3 className="about-story-intro">
           I started noticing some major problems in how people share files:
-        </p>
+        </h3>
 
         <div className="problem-sections">
           <div className="problem-item">
+            <br />
             <h4 className="problem-title"><span>01</span> The Login Trap</h4>
             <p className="problem-text">
               I saw people at libraries and cyber cafés logging into their WhatsApp Web on public PCs just to move a file from their phone. Half the time people forget to log out and their private chats are just... out there.
@@ -43,7 +48,7 @@ export default function AboutPage() {
           <div className="problem-item">
             <h4 className="problem-title"><span>03</span> The Large File Struggle</h4>
             <p className="problem-text">
-              Sharing large files is still a massive headache. It’s making you wait forever or sign up for some random cloud service. No cap, it shouldn't be this hard.
+              Sharing large files is still a massive headache. It’s making you wait forever or sign up for some random cloud service. I think, it shouldn't be this hard.
             </p>
           </div>
         </div>
