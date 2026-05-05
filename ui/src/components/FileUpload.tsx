@@ -49,7 +49,7 @@ export default function FileUpload({ onFileUpload, isUploading }: FileUploadProp
       </div>
       <h3>Drag & drop a file</h3>
       <p>or click to select a file</p>
-      <p style={{ marginTop: '0.5rem', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+      <p style={{ marginTop: '0.5rem', fontSize: '0.75rem', color: 'var(--text-light)' }}>
         Share any file with your peers securely
       </p>
     </div>

@@ -45,7 +45,7 @@ public class FileController {
 
     public void start(){
         server.start();
-        System.out.println("API server startex on port " + server.getAddress().getPort());
+        System.out.println("API server started on port " + server.getAddress().getPort());
 
         cleanScheduler.scheduleAtFixedRate(()->{
             try{
@@ -139,6 +139,8 @@ public class FileController {
 //    This is the content of the file.
 //
 //    ------WebKitFormBoundaryABC123--
+
+
 
 
 

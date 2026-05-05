@@ -22,7 +22,7 @@ public class App {
             }));
 
             System.out.println("Press enter to stop the server");
-            System.in.read(); // does it work??
+            System.in.read();
         }catch (IOException ex){
             System.err.println("Error starting server" + ex.getMessage());
             ex.printStackTrace();
