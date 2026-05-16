@@ -9,7 +9,7 @@ export default function AboutPage() {
       <div className="about-photo-wrapper">
         <div className="about-photo-ring">
           <Image
-            src="/my.png"
+            src="/my.jpeg"
             alt="Rohit — Founder of thedoradoor"
             width={180}
             height={180}
