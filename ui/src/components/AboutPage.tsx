@@ -18,7 +18,7 @@ export default function AboutPage() {
           />
         </div>
         <h2 className="about-founder-name">Rohit</h2>
-        <p className="about-founder-role">Founder & Developer</p>
+        <p className="about-founder-role">Developer of thedoradoor</p>
       </div>
 
       {/* Story */}
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <div className="problem-item">
             <h4 className="problem-title"><span>02</span> The Stationery Shop Leak</h4>
             <p className="problem-text">
-              When you need a  printout of your resume or documents, you end up giving your personal mobile number to the stationery shop dude. Next thing you know, you’re getting unwanted messages and statuses specially girls. Total privacy fail.
+              When you need a  printout of your resume or documents, you end up giving your personal mobile number to the stationery shop dude. Next thing you know, you’re getting unwanted messages and statuses. Total privacy fail.
             </p>
           </div>
 
