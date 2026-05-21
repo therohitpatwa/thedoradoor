@@ -196,15 +196,11 @@ export default function Home() {
           </div>
 
           {/* Right Hero Text */}
-          <div className="right-hero-text">
+          <div className="right-hero-text animate-fade-in-up">
             <h2>
-              <span className="drop-word" style={{ animationDelay: '0.2s' }}>Share</span>{' '}
-              <span className="drop-word" style={{ animationDelay: '0.6s' }}>your</span>{' '}
-              <span className="drop-word" style={{ animationDelay: '1.0s' }}>file</span>{' '}
-              <span className="drop-word" style={{ animationDelay: '1.4s' }}>anywhere</span>
+              Share your file anywhere
               <br />
-              <span className="drop-word" style={{ animationDelay: '1.9s' }}>by</span>{' '}
-              <span className="drop-word drop-word-brand" style={{ animationDelay: '2.3s' }}>TheDoraDoor</span>
+              by <span className="drop-word-brand">TheDoraDoor</span>
             </h2>
           </div>
         </div>
