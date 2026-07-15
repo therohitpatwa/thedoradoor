@@ -10,7 +10,7 @@ export default function AboutPage() {
         <div className="about-photo-ring">
           <Image
             src="/my.jpeg"
-            alt="Rohit — Founder of thedoradoor"
+            alt="Rohit — Founder of Anywheredoor"
             width={180}
             height={180}
             className="about-photo"
@@ -18,12 +18,12 @@ export default function AboutPage() {
           />
         </div>
         <h2 className="about-founder-name">Rohit</h2>
-        <p className="about-founder-role">Developer of thedoradoor</p>
+        <p className="about-founder-role">Developer of Anywheredoor</p>
       </div>
 
       {/* Story */}
       <div className="about-story">
-        <h2 className="about-story-title">The Story Behind Thedoradoor</h2>
+        <h2 className="about-story-title">The Story Behind Anywheredoor</h2>
 
         <h3 className="about-story-intro">
           I started noticing some major problems in how people share files:
@@ -55,10 +55,10 @@ export default function AboutPage() {
 
         <div className="solution-section">
           <p>
-            These were the problems I saw, so I built <strong>thedoradoor</strong>. The name is literally inspired by Doraemon’s Anywhere Door.
+            These were the problems I saw, so I built <strong>Anywhere Door</strong>. The name is literally inspired by Doraemon’s Anywhere Door.
           </p>
           <p>
-            Just like Doraemon could take you from anywhere to anywhere with his door, TheDoraDoor let you share files <strong>from anywhere, to anywhere</strong> without any login or signup. It’s all peer-to-peer, right in your browser. No middleman, just the anywhere door for your files.
+            Just like Doraemon could take you from anywhere to anywhere with his door, Anywhere Door let you share files <strong>from anywhere, to anywhere</strong> without any login or signup. It’s all peer-to-peer, right in your browser. No middleman, just the anywhere door for your files.
           </p>
         </div>
       </div>

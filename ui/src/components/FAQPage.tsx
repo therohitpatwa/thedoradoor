@@ -4,9 +4,9 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: 'How does thedoradoor work?',
+    question: 'How does Anywheredoor work?',
     answer:
-      'Thedoradoor uses end-to-end technology to transfer files directly between two devices. When you upload a file, the app generates an invite code. Share that code with the recipient, and they can download the file directly from your device.',
+      'Anywheredoor uses end-to-end technology to transfer files directly between two devices. When you upload a file, the app generates an invite code. Share that code with the recipient, and they can download the file directly from your device.',
   },
   {
     question: 'Is my data secure?',
@@ -17,7 +17,7 @@ const faqs = [
   {
     question: 'Do I need to create an account?',
     answer:
-      'No! thedoradoor is designed to be frictionless. You can start sharing files immediately—no sign-up, no login, no personal information required.',
+      'No! Anywheredoor is designed to be frictionless. You can start sharing files immediately—no sign-up, no login, no personal information required.',
   },
   {
     question: 'What is the maximum file size I can transfer?',
@@ -37,7 +37,7 @@ const faqs = [
   {
     question: 'What browsers are supported?',
     answer:
-      'thedoradoor works on all modern browsers including Chrome, Firefox, Safari, and Edge. We recommend using the latest version for the best experience.',
+      'Anywheredoor works on all modern browsers including Chrome, Firefox, Safari, and Edge. We recommend using the latest version for the best experience.',
   },
 ];
 
@@ -52,7 +52,7 @@ export default function FAQPage() {
     <div className="page-container" id="faq-page">
       <h1 className="page-title">FAQ</h1>
       <p className="page-subtitle">
-        Frequently asked questions about thedoradoor.
+        Frequently asked questions about Anywheredoor.
       </p>
 
       <div>

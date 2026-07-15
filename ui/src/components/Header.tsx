@@ -25,8 +25,8 @@ export default function Header({ activePage, onNavigate }: HeaderProps) {
         aria-label="Go to home transfer page"
       >
         {/* Replace '/logo.png' below with the actual name of your image in the public folder */}
-        <img src="/logo.png" alt="thedoradoor logo" width={32} height={32} style={{ objectFit: 'contain', borderRadius: '4px', transform: 'scale(2.2)', margin: '0 0.8rem 0 0.5rem' }} />
-        thedoradoor
+        <img src="/logo.png" alt="AnywhereDoor logo" width={32} height={32} style={{ objectFit: 'contain', borderRadius: '4px', transform: 'scale(2.2)', margin: '0 0.8rem 0 0.5rem' }} />
+        AnywhereDoor
       </div>
 
       <nav className={`header-nav ${isMobileMenuOpen ? 'mobile-open' : ''}`} id="main-nav">

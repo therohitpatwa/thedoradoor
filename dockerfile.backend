@@ -6,7 +6,7 @@ RUN mvn clean package dependency:copy-dependencies -DskipTests
 
 FROM eclipse-temurin:17-jre
 WORKDIR /app
-COPY --from=build /build/target/thedoradoor-1.0-SNAPSHOT.jar app.jar
+COPY --from=build /build/target/anywheredoor-1.0-SNAPSHOT.jar app.jar
 COPY --from=build /build/target/dependency/*.jar ./lib/
 EXPOSE 8080
 CMD ["java", "-cp", "app.jar:lib/*", "p2p.App"]

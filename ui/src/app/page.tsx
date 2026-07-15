@@ -106,10 +106,10 @@ export default function Home() {
             <div className="center-content">
               {/* Hero Branding */}
               <div className="hero-brand" id="hero-brand">
-                <h1 className="hero-title">TheDoraDoor</h1>
+                <h1 className="hero-title">AnywhereDoor</h1>
                 <p className="hero-tagline">
                   <span className="tagline-part1">Wanna Share Files !</span>
-                  <span className="tagline-part2">Knock Knock on thedoradoor</span>
+                  <span className="tagline-part2">Knock Knock on Anywheredoor</span>
                 </p>
               </div>
 
@@ -200,7 +200,7 @@ export default function Home() {
             <h2>
               Share your file anywhere
               <br />
-              by <span className="drop-word-brand">TheDoraDoor</span>
+              by <span className="drop-word-brand">AnywhereDoor</span>
             </h2>
           </div>
         </div>
@@ -210,7 +210,7 @@ export default function Home() {
       {activePage === 'faq' && <FAQPage />}
 
       <footer className="footer" id="footer">
-        <p>thedoradoor &copy; {new Date().getFullYear()} — Secure File Transfer App</p>
+        <p>Anywheredoor &copy; {new Date().getFullYear()} — Secure File Transfer App</p>
       </footer>
     </>
   );
